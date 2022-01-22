@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/UIResolutionSelector.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/arial.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="UISettingCheckbox" type="HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 10.0
+margin_right = 132.0
+margin_bottom = 29.0
+custom_fonts/font = SubResource( 1 )
+text = "Screen Resolution"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 136.0
+margin_right = 245.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 2 )
+text = "1920x1080"
+items = [ "640x360", null, false, 0, null, "1280x720", null, false, 1, null, "1920x1080", null, false, 2, null ]
+selected = 2
+[connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]

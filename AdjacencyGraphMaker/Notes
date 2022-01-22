@@ -1,0 +1,37 @@
+For Graph Maker
+
+	If resource node selected, give option to update resource count
+		instead of needing to select button.
+
+	Needed: 
+
+		Option to clear clear all nodes/connections
+
+		Option for what to include in the output file
+			i.e.	num processes,
+					num resources,
+					existing resources vector,
+					possessed resource vector,
+					available resources vector,
+					Currently assigned matrix,
+					Unmet needs matrix,
+					Maximum claim matrix
+
+
+		Drag nodes & redraw any connections at the new position.
+			ORRR, while a node is being dragged, the connection can continuously
+			redraw to give appearance that it is moving with the node. 
+				If node crosses center point of from node, then assign to opposite edge?
+
+
+		Give feedback for if it's a:
+			cycle:
+			knot:
+			Toggle for expedient? (automatically have request arrows redraw)
+			sink count / node(s)?
+			any other relevent information
+			Deadlock?
+
+
+
+			magick convert c:/users/chris/desktop/exe_icon.png -define icon:auto-resize=256,128,64,48,32,16 c:/users/chris/desktop/exe_icon.ico

@@ -1,0 +1,206 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://UI/Menu.gd" type="Script" id=1]
+[ext_resource path="res://UI/UIResolutionSelector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/settings_checkbox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fonts/arial.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.211765, 0.247059, 0.333333, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 14
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 14
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 14
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="Panel" type="Panel"]
+margin_right = 242.0
+margin_bottom = 224.0
+custom_styles/panel = SubResource( 6 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 2.0
+margin_right = 238.0
+margin_bottom = 216.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer3" type="Control" parent="VBoxContainer"]
+margin_right = 236.0
+margin_bottom = 2.0
+rect_min_size = Vector2( 224, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 6.0
+margin_right = 236.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 7 )
+text = "Options"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+margin_top = 29.0
+margin_right = 236.0
+margin_bottom = 33.0
+
+[node name="UISettingCheckbox" parent="VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 37.0
+margin_right = 236.0
+margin_bottom = 62.0
+alignment = 2
+
+[node name="Label" parent="VBoxContainer/UISettingCheckbox" index="0"]
+margin_top = 3.0
+margin_bottom = 22.0
+
+[node name="OptionButton" parent="VBoxContainer/UISettingCheckbox" index="1"]
+margin_right = 236.0
+margin_bottom = 25.0
+text = "1280x720"
+selected = 1
+
+[node name="UIFullscreenCheckbox" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 66.0
+margin_right = 236.0
+margin_bottom = 90.0
+alignment = 2
+title = "Fullscreen"
+
+[node name="AutoRenum" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 94.0
+margin_right = 236.0
+margin_bottom = 118.0
+hint_tooltip = "Auto renumber process & resource nodes when deleting other nodes."
+alignment = 2
+title = "Auto Renumber Nodes"
+
+[node name="Label" parent="VBoxContainer/AutoRenum" index="0"]
+margin_left = 45.0
+margin_top = 2.0
+margin_right = 208.0
+margin_bottom = 21.0
+text = "Auto Renumber Nodes"
+
+[node name="CheckBox" parent="VBoxContainer/AutoRenum" index="1"]
+margin_left = 212.0
+margin_right = 236.0
+margin_bottom = 24.0
+hint_tooltip = "Auto renumber process & resource nodes when deleting other nodes."
+pressed = true
+
+[node name="UISettingLabelMatrixCheckbox" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 122.0
+margin_right = 236.0
+margin_bottom = 146.0
+hint_tooltip = "Label matrix columns and rows"
+alignment = 2
+
+[node name="Label" parent="VBoxContainer/UISettingLabelMatrixCheckbox" index="0"]
+margin_left = 19.0
+margin_top = 2.0
+margin_right = 208.0
+margin_bottom = 21.0
+text = "Label Matrix rows/columns"
+
+[node name="CheckBox" parent="VBoxContainer/UISettingLabelMatrixCheckbox" index="1"]
+margin_left = 212.0
+margin_right = 236.0
+margin_bottom = 24.0
+hint_tooltip = "Label matrix columns and rows"
+pressed = true
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+margin_top = 150.0
+margin_right = 236.0
+margin_bottom = 155.0
+rect_min_size = Vector2( 224, 5 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 159.0
+margin_right = 236.0
+margin_bottom = 181.0
+alignment = 2
+
+[node name="ExitButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 201.0
+margin_right = 236.0
+margin_bottom = 22.0
+hint_tooltip = "Exit Program"
+custom_fonts/font = SubResource( 8 )
+text = "Exit"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+margin_top = 185.0
+margin_right = 236.0
+margin_bottom = 190.0
+rect_min_size = Vector2( 224, 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 194.0
+margin_right = 236.0
+margin_bottom = 216.0
+alignment = 1
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 56.0
+margin_right = 104.0
+margin_bottom = 22.0
+hint_tooltip = "Close options window"
+custom_fonts/font = SubResource( 9 )
+text = "Close"
+
+[node name="spacer" type="Control" parent="VBoxContainer/HBoxContainer"]
+margin_left = 108.0
+margin_right = 128.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ApplyButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 132.0
+margin_right = 179.0
+margin_bottom = 22.0
+hint_tooltip = "Apply chosen settings"
+custom_fonts/font = SubResource( 10 )
+text = "Apply"
+[connection signal="resolution_changed" from="VBoxContainer/UISettingCheckbox" to="." method="_on_UISettingCheckbox_resolution_changed"]
+[connection signal="toggled" from="VBoxContainer/UIFullscreenCheckbox" to="." method="_on_UIFullscreenCheckbox_toggled"]
+[connection signal="toggled" from="VBoxContainer/AutoRenum" to="." method="_on_AutoRenum_toggled"]
+[connection signal="toggled" from="VBoxContainer/UISettingLabelMatrixCheckbox" to="." method="_on_UISettingLabelMatrixCheckbox_toggled"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/CancelButton" to="." method="_on_CancelButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/ApplyButton" to="." method="_on_ApplyButton_pressed"]
+
+[editable path="VBoxContainer/UISettingCheckbox"]
+
+[editable path="VBoxContainer/AutoRenum"]
+
+[editable path="VBoxContainer/UISettingLabelMatrixCheckbox"]

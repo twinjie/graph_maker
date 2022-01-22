@@ -1,0 +1,468 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Fonts/arialbd.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/ariali.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/arialbi.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/arial.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="MatrixBackground" type="ColorRect"]
+show_behind_parent = true
+margin_bottom = 20.0
+rect_min_size = Vector2( 640, 620 )
+mouse_filter = 2
+color = Color( 0, 0.0470588, 0.301961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_right = 132.0
+margin_bottom = 40.0
+columns = 19
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer2" type="CenterContainer" parent="GridContainer"]
+margin_right = 30.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer2"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer3" type="CenterContainer" parent="GridContainer"]
+margin_left = 34.0
+margin_right = 64.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer3"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer4" type="CenterContainer" parent="GridContainer"]
+margin_left = 68.0
+margin_right = 98.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer4"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer5" type="CenterContainer" parent="GridContainer"]
+margin_left = 102.0
+margin_right = 132.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer5"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer6" type="CenterContainer" parent="GridContainer"]
+margin_left = 136.0
+margin_right = 166.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer6"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer7" type="CenterContainer" parent="GridContainer"]
+margin_left = 170.0
+margin_right = 200.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer7"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer8" type="CenterContainer" parent="GridContainer"]
+margin_left = 204.0
+margin_right = 234.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer8"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer9" type="CenterContainer" parent="GridContainer"]
+margin_left = 238.0
+margin_right = 268.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer9"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer10" type="CenterContainer" parent="GridContainer"]
+margin_left = 272.0
+margin_right = 302.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer10"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer11" type="CenterContainer" parent="GridContainer"]
+margin_left = 306.0
+margin_right = 336.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer11"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer12" type="CenterContainer" parent="GridContainer"]
+margin_left = 340.0
+margin_right = 370.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer12"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer13" type="CenterContainer" parent="GridContainer"]
+margin_left = 374.0
+margin_right = 404.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer13"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer14" type="CenterContainer" parent="GridContainer"]
+margin_left = 408.0
+margin_right = 438.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer14"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer15" type="CenterContainer" parent="GridContainer"]
+margin_left = 442.0
+margin_right = 472.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer15"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer16" type="CenterContainer" parent="GridContainer"]
+margin_left = 476.0
+margin_right = 506.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer16"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer17" type="CenterContainer" parent="GridContainer"]
+margin_left = 510.0
+margin_right = 540.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer17"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer18" type="CenterContainer" parent="GridContainer"]
+margin_left = 544.0
+margin_right = 574.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer18"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer19" type="CenterContainer" parent="GridContainer"]
+margin_left = 578.0
+margin_right = 608.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer19"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer20" type="CenterContainer" parent="GridContainer"]
+margin_left = 612.0
+margin_right = 642.0
+margin_bottom = 20.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer20"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer21" type="CenterContainer" parent="GridContainer"]
+margin_top = 24.0
+margin_right = 30.0
+margin_bottom = 44.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer21"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]P10[/b]"
+text = "P10"
+scroll_active = false
+
+[node name="CenterContainer22" type="CenterContainer" parent="GridContainer"]
+margin_left = 34.0
+margin_top = 24.0
+margin_right = 64.0
+margin_bottom = 44.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer/CenterContainer22"]
+margin_right = 30.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 20 )
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "0"
+text = "0"
+scroll_active = false
